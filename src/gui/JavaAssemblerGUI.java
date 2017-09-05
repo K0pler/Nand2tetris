@@ -29,18 +29,20 @@ public class JavaAssemblerGUI extends JPanel implements ActionListener {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	String path= System.getProperty("user.dir");
 
 	JTextArea asm = new JTextArea(30, 20);
 	
 	JTextArea hack = new JTextArea(30, 20);
 	
-	Icon loadIcon = new ImageIcon("F:\\eclipse\\workspace\\JavaAssembler\\src\\buttonicons\\fileopen.png");
+	Icon loadIcon = new ImageIcon(path + File.separator + "src" + File.separator + "buttonicons" + File.separator + "fileopen.png");
     JButton loadButton = new JButton(loadIcon);
     
-    Icon saveIcon = new ImageIcon("F:\\eclipse\\workspace\\JavaAssembler\\src\\buttonicons\\save.png");
+    Icon saveIcon = new ImageIcon(path + File.separator + "src" + File.separator + "buttonicons" + File.separator + "save.png");
     JButton saveButton = new JButton(saveIcon);
     
-    Icon parseIcon = new ImageIcon("F:\\eclipse\\workspace\\JavaAssembler\\src\\buttonicons\\Gear.png");
+    Icon parseIcon = new ImageIcon(path + File.separator + "src" + File.separator + "buttonicons" + File.separator + "Gear.png");
     JButton parseButton = new JButton(parseIcon);
     
     JFileChooser fc = new JFileChooser();
